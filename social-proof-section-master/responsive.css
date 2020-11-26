@@ -1,5 +1,9 @@
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 900px) {
+    .row {
+        flex-wrap: wrap;
+    }
     .main {
+        flex-basis: 40%;
         margin: 0 auto 40px;
         padding: 0;
     }
@@ -11,6 +15,7 @@
     }
 
     .rates {
+        flex-basis: 40%;
         flex-direction: row;
         margin: 0 auto;
         padding: 0;
