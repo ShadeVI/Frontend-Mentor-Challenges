@@ -54,7 +54,6 @@ p {
   align-items: center;
   height: 50px;
   padding: 25px 25px;
-  background-color: #444;
 }
 
 .share > img {
@@ -83,13 +82,6 @@ p {
   margin: 5px 0;
 }
 
-.hidden {
-  display: none;
-}
-
-.text-center {
-  text-align: center;
-}
 .attribution {
   font-size: 11px;
   text-align: center;
