@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "join join"
+        "subscription infos";
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+    height: 100%;
+}
+
+.join-section {
+    grid-area: join;
+}
+
+.join-section h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.join-section h3 {
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+.join-section p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+.subscription{
+    grid-area: subscription;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.subscription h4,
+.infos h4 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.subscription p {
+    color: #efefef;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+}
+
+.subscription p:first-of-type {
+    color: hsl(217, 73%, 90%);
+    margin-bottom: 10px;
+}
+
+.subscription span {
+    display: inline;
+    color: #fff;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+.infos {
+    grid-area: infos;
+    background-color: hsl(179, 52%, 55%);
+}
+
+.infos ul {
+    list-style-type: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 0.9rem;
+}
+
+.infos ul li {
+    margin: 4px 0;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px) {
+    .grid-container {
+        width: 360px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "join"
+        "subscription"
+        "infos";
+    }
+}
