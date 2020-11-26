@@ -56,7 +56,7 @@ img.bg-bottom {
 .main {
     flex-basis: 30%;
     min-width: 400px;
-    margin-bottom: 60px;
+    margin: 0 0 60px 20px;
 }
 
 .main h1 {
