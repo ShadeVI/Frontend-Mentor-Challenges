@@ -1,0 +1,29 @@
+@media screen and (max-width: 1290px) {
+    section {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main {
+        margin: 30px 15px;
+    }
+    .card {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main h1 {
+        line-height: 1;
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .section {
+        min-width: 100%;
+    }
+}
