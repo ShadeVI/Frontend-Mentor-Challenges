@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.logo {
+    margin-bottom: 25px;
+}
+
+.title {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.title strong {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.title + p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control:first-child {
+    flex: 2;
+    position: relative;
+    margin-right: 25px;
+}
+
+.form-control:last-child {
+    flex: 1;
+}
+
+.form-control:first-child > small {
+    margin-top: 5px;
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+}
+
+form input,
+form button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+form input {
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 100%;
+}
+
+form input::placeholder {
+    color: hsl(0, 0%, 77%);
+}
+
+form button {
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 5px 0 10px hsl(223, 100%, 88%);
+}
+
+.illustration-dashboard {
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.socials {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.socials ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials ul li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.socials ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: hsl(223, 87%, 63%);
+    text-decoration: none;
+    border: 2px solid hsla(0, 0%, 59%, 0.192);
+    border-radius: 100%;
+}
+
+.socials ul li a i {
+    font-size: 14px;
+}
+
+.copyright {
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
