@@ -8,6 +8,7 @@
 
 body {
     min-height: 100vh;
+    min-width: 375px;
     position: relative;
     font-family: "Poppins", sans-serif;
     color: hsl(234, 12%, 34%);
@@ -45,7 +46,8 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 150px;
+    max-width: 1000px;
+    min-width: 500px;
 }
 
 .card {
