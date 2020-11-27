@@ -25,8 +25,8 @@
   
     <form id="form">
       <div class="form-control">
-        <input type="email" placeholder="Your email address...">
-        <small>Error</small>
+        <input id="email" type="email" placeholder="Your email address..." required>
+        <small id="error" class="hidden">Please provide a valid email address</small>
       </div>
       <div class="form-control">
         <button type="submit">Notify Me</button>
@@ -46,6 +46,6 @@
     <small class="copyright">&copy; Copyright Ping. All rights reserved.</small>
 
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>

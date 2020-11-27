@@ -93,6 +93,10 @@ form input {
     width: 100%;
 }
 
+.invalid {
+    border-color: hsl(354, 100%, 66%);
+}
+
 form input::placeholder {
     color: hsl(0, 0%, 77%);
 }
@@ -148,4 +152,8 @@ form button {
 .copyright {
     color: hsl(0, 0%, 59%);
     font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
