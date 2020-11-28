@@ -19,7 +19,7 @@ body {
 .grid-container {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(4, 1fr);
