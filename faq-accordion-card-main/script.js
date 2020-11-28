@@ -1,27 +1,36 @@
-const rows = document.querySelectorAll('.row');
-const boxImage = document.querySelector('.box-image');
+const detailsSummaries = document.querySelectorAll('details summary');
+const boxElement = document.querySelector('.box-image');
 
-rows.forEach( row => {
-  row.addEventListener('click', e => showContent(e));
-  row.addEventListener('mouseover', moveBoxLeft);
-  row.addEventListener('mouseleave', moveBoxRight);
+detailsSummaries.forEach( detailsSummary => {
+  detailsSummary.addEventListener('mouseover', moveBox);
+  detailsSummary.addEventListener('mouseleave', moveBoxBack);
 })
 
-function showContent(e){
-  if(e.currentTarget){
-    const textContent = e.currentTarget.children[1];
-    const arrow = e.currentTarget.children[0].children[1];
-    const textTitle = e.currentTarget.children[0].children[0];
-    textContent.classList.toggle('show');
-    arrow.classList.toggle('arrow-up');
-    textTitle.classList.toggle('text-bold');
+function moveBox(){
+  if (window.innerWidth <= 375){
+    boxElement.style.top = '-80px';
+  } else {
+    boxElement.style.left = '-100px';
   }
 }
 
-function moveBoxLeft(){
-  boxImage.classList.add('box-image-move-left');
+function moveBoxBack(){
+  if (window.innerWidth <= 375){
+    boxElement.style.top = '-60px';
+  } else {
+    boxElement.style.left = '-76px';
+  }
 }
 
-function moveBoxRight(){
-  boxImage.classList.remove('box-image-move-left');
+window.addEventListener('resize', checkWindowsSize);
+
+function checkWindowsSize(){
+  if(window.innerWidth <= 375){
+    console.log('here')
+    boxElement.style.top = '-60px';
+    boxElement.style.left = '20px';
+  } else {
+    boxElement.style.top = '152px';
+    boxElement.style.left = '-76px';
+  }
 }
