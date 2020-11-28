@@ -6,24 +6,18 @@
 
     .card-1 {
         background-color: hsl(263, 55%, 52%);
-        grid-column: span 1;
+        grid-column: span 2;
     }
 
     .card-3 {
         background-color: hsl(0, 0%, 100%);
-        grid-row: span 1;
-    }
-
-    .card-5 {
-        background-color: hsl(0, 0%, 100%);
-        grid-column: span 1;
+        grid-row: span 2;
     }
 }
 
 @media screen and (max-width: 468px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
 
     .card-1 {
