@@ -31,6 +31,9 @@ body {
 
 .card-1 {
     background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0;
     grid-column: span 2;
 }
 
