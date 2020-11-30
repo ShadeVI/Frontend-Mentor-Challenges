@@ -1,0 +1,157 @@
+@media screen and (max-width: 1024px) {
+    body {
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+
+    nav > .flex {
+        flex-direction: row;
+    }
+
+    nav .top-menu {
+        display: none;
+    }
+
+    nav .top-menu li {
+        margin: 20px auto;
+    }
+
+    nav .top-menu li a {
+        color: #fff;
+    }
+
+    nav .top-menu li a.btn {
+        border-color: #fff;
+    }
+
+    nav .showMenu {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--neutral-veryDarkViolet);
+        position: fixed;
+        height: calc(100vh - 75px);
+        width: 100vw;
+        top: 75px;
+        left: 0;
+    }
+
+    nav .hamburger {
+        display: block;
+        text-align: right;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    nav .hamburger .open {
+        display: inline-block;
+    }
+
+    nav .hamburger .close {
+        display: none;
+    }
+
+    nav .hamburger .show {
+        display: inline-block;
+    }
+
+    header {
+        margin: 70px 0 100px;
+    }
+
+    header .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    header .box {
+        align-self: center;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+    }
+
+    header img {
+        display: inline-block;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .mobile-no-decoration::after {
+        border-top: 0;
+    }
+
+    .line-decoration::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header::before {
+        background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+        background-position: 0 0;
+        transform: translateY(0);
+    }
+
+    header::after {
+        background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+        background-position: bottom right;
+        transform: translateY(25%);
+    }
+
+    section.infos {
+        width: 90%;
+        margin: auto;
+    }
+
+    section.infos .box:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    section.infos h2 {
+        font-size: 2.7rem;
+        padding-top: 50px;
+        position: relative;
+    }
+
+    section.how-we-work {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.how-we-work .container {
+        padding: 50px 30px;
+    }
+
+    section.how-we-work h3 {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    section.how-we-work::after {
+        background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    }
+
+    footer .socials-container .flex {
+        flex-direction: row;
+        margin: 30px auto;
+    }
+
+    footer .menu-bottom .align-start {
+        align-self: center;
+    }
+
+    footer .menu-bottom h4 {
+        margin: 30px auto;
+    }
+
+    footer::after {
+        background-image: url(./images/bg-pattern-footer-mobile.svg);
+    }
+}

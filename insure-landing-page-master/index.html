@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Insure landing page</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 
 <body>
 
@@ -17,7 +18,11 @@
       <div class="box">
         <img src="./images/logo.svg" alt="logo">
       </div>
-      <ul class="flex">
+      <div class="box hamburger" id="hamburger">
+        <img class="open" src="./images/icon-hamburger.svg" alt="hamburger">
+        <img class="close" src="./images/icon-close.svg" alt="close">
+      </div>
+      <ul class="flex top-menu">
         <li><a href="#">How we work</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Account</a></li>
@@ -27,9 +32,9 @@
   </nav>
 
   <header class="bg-primary">
-    <div class="container flex">
+    <div class="container flex flex-reverse">
         <div class="box align-start">
-          <h1 class="text-secondary line-decoration">Humanizing your insurance.</h1>
+          <h1 class="text-secondary line-decoration mobile-no-decoration">Humanizing your insurance.</h1>
           <p class="text-secondary">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
           <a href="#" class="btn btn-secondary">View plans</a>
         </div>
@@ -39,7 +44,7 @@
     </div>
   </header>
   
-  <section id="infos">
+  <section class="infos">
     <div class="container">
       <h2 class="line-decoration">We’re different</h2>
       <div class="flex">
@@ -67,7 +72,7 @@
     </div>
   </section>
   
-  <section id="how-we-work" class=" bg-primary text-secondary">
+  <section class="how-we-work bg-primary text-secondary">
     <div class="container flex">
         <h3 class="text-secondary">Find out more about how we work</h2>
         <a href="#" class="btn btn-secondary">How we work</a>

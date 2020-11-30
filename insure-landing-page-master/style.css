@@ -25,7 +25,7 @@
 }
 
 *a {
-    z-index: 1000;
+    z-index: 100;
 }
 
 body {
@@ -111,7 +111,13 @@ a {
 /* Nav Styling */
 
 nav {
+    width: 100%;
+    position: fixed;
     padding: 20px 0;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
 }
 
 nav ul li {
@@ -128,11 +134,15 @@ nav ul li a:hover {
     color: var(--primary-darkViolet);
 }
 
+nav .hamburger {
+    display: none;
+}
+
 /* Header Styling */
 
 header {
     padding: 100px;
-    margin-bottom: 300px;
+    margin: 30px 0 300px;
     position: relative;
 }
 
@@ -189,11 +199,11 @@ header p {
 
 /* Section Infos Styling */
 
-section#infos .box:not(:last-child) {
+section.infos .box:not(:last-child) {
     margin-right: 20px;
 }
 
-section#infos h2 {
+section.infos h2 {
     font-size: 3.5rem;
     padding-top: 50px;
     position: relative;
@@ -203,47 +213,46 @@ section#infos h2 {
     border-color: var(--neutral-veryLightGray);
 }
 
-section#infos h2 .line-decoration::after {
-    width: 150px;
+section.infos h2 .line-decoration::after {
     border-color: var(--neutral-darkGrayishViolet);
 }
 
-section#infos .flex {
+section.infos .flex {
     margin: 50px 0 100px;
 }
 
-section#infos img {
+section.infos img {
     width: 60px;
     margin-bottom: 20px;
 }
 
-section#infos h4 {
+section.infos h4 {
     font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-section#infos p {
+section.infos p {
     color: var(--primary-grayishBlue);
     line-height: 1.5;
 }
 
 /* Section How We Work */
 
-section#how-we-work {
+section.how-we-work {
     position: relative;
 }
 
-section#how-we-work .container {
+section.how-we-work .container {
     padding: 50px;
 }
 
-section#how-we-work h3 {
+section.how-we-work h3 {
     font-size: 3rem;
     width: 50%;
     font-weight: 500;
 }
 
-section#how-we-work::after {
+section.how-we-work::after {
     position: absolute;
     content: "";
     background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
