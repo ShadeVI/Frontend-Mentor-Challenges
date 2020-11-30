@@ -238,12 +238,9 @@ section.infos p {
 
 /* Section How We Work */
 
-section.how-we-work {
-    position: relative;
-}
-
 section.how-we-work .container {
     padding: 50px;
+    position: relative;
 }
 
 section.how-we-work h3 {
@@ -252,7 +249,7 @@ section.how-we-work h3 {
     font-weight: 500;
 }
 
-section.how-we-work::after {
+section.how-we-work .container::after {
     position: absolute;
     content: "";
     background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
