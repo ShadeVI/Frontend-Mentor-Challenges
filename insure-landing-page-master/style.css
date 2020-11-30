@@ -124,6 +124,10 @@ nav ul li a {
     color: var(--neutral-darkGrayishViolet);
 }
 
+nav ul li a:hover {
+    color: var(--primary-darkViolet);
+}
+
 /* Header Styling */
 
 header {
