@@ -31,6 +31,10 @@ const db = [
         name: "insure-landing-page-master",
         level: "Junior",
     },
+    {
+        name: "huddle-landing-page-with-single-introductory-section-master",
+        level: "Newbie",
+    },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");

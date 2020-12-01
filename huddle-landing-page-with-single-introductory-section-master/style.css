@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center center;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Global Styling */
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Logo styling */
+
+.logo {
+    margin: 30px auto 50px;
+}
+
+/* Main Styling */
+
+.description {
+    margin: 40px 0 40px 40px;
+}
+
+.title {
+    width: 70%;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 50px;
+    background-color: #fff;
+    color: hsl(257, 36%, 56%);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+/* Socials links */
+
+.socials {
+    text-align: right;
+}
+
+.socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
+}
+
+.socials a:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        text-align: center;
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .description {
+        margin-left: 0;
+    }
+    .title {
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .socials {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
