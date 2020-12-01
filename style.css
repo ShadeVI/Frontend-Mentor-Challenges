@@ -68,7 +68,7 @@ main {
 
 .box {
     width: 280px;
-    height: 250px;
+    height: 270px;
     margin: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -93,7 +93,7 @@ main {
 }
 
 .title {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
     margin: 10px auto;
     text-align: center;
