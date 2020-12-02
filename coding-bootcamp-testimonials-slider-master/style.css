@@ -83,6 +83,8 @@ button {
     background-size: 100px;
     padding: 50px 0;
     color: hsl(240, 38%, 20%);
+    margin-right: -150px;
+    z-index: 1;
 }
 
 .quote {
@@ -122,6 +124,7 @@ button {
     }
     .comment {
         background-position: center top;
+        margin: auto;
     }
     .role {
         margin-top: 5px;
