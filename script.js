@@ -35,6 +35,11 @@ const db = [
         name: "huddle-landing-page-with-single-introductory-section-master",
         level: "Newbie",
     },
+
+    {
+        name: "coding-bootcamp-testimonials-slider-master",
+        level: "Newbie",
+    },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
