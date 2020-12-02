@@ -1,43 +1,53 @@
 const db = [
     {
         name: "faq-accordion-card-main",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "profile-card-component-main",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "single-price-grid-component-master",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "social-proof-section-master",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "four-card-feature-section-master",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "ping-coming-soon-page-master",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
     {
         name: "testimonials-grid-section-main",
+        image: "desktop-design.jpg",
         level: "Junior",
     },
     {
         name: "insure-landing-page-master",
+        image: "desktop-design.jpg",
         level: "Junior",
     },
     {
         name: "huddle-landing-page-with-single-introductory-section-master",
+        image: "desktop-design.jpg",
         level: "Newbie",
     },
 
     {
         name: "coding-bootcamp-testimonials-slider-master",
+        image: "desktop-design-slide-1.jpg",
         level: "Newbie",
     },
 ];
@@ -45,14 +55,14 @@ const db = [
 const newbieSection = document.querySelector("#newbie .box-container");
 const juniorSection = document.querySelector("#junior .box-container");
 
-db.forEach(({ name, level }) => {
+db.forEach(({ name, image, level }) => {
     const nameFormatted = formatName(name);
     const listItem = document.createElement("div");
     listItem.classList.add("box");
     listItem.innerHTML = `
         <div class="img-wrapper">
             <img
-                src="./${name}/design/desktop-design.jpg"
+                src="./${name}/design/${image}"
                 alt=""
             />
         </div>
