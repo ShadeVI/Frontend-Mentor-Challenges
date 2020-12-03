@@ -105,13 +105,19 @@ main {
     text-align: center;
 }
 
-.code {
+.code,
+.live {
     position: absolute;
     bottom: 15px;
     transform: translateY(calc(15px / 2));
     left: 15px;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
+}
+
+.live {
+    margin-left: 10px;
+    left: calc(15px + 24px);
 }
 
 .level {
