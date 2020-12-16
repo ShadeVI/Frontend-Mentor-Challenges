@@ -22,8 +22,8 @@
                 <div class="logo">
                     <img src="./images/logo.svg" alt="logo" />
                 </div>
-                <nav>
-                    <ul class="desktop-menu">
+                <nav class="mobile-menu-container hide-mobile-menu">
+                    <ul class="mobile-menu">
                         <li>
                             <a href="#">Product</a>
                         </li>
@@ -41,20 +41,22 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="hamburger hide-hamburger">
+                    <img
+                        src="./images/icon-hamburger.svg"
+                        alt="hamburger-menu"
+                    />
+                </div>
             </header>
-            <div class="main-content flex">
+            <div class="main-content flex mobile-flex-col-reverse">
                 <div class="flex-col">
                     <h2 class="light-text-spacing">
                         <span class="round-black-filled">New</span> Monograph
                         Dashboard
                     </h2>
-                    <h1>
-                        Powerful insights <br />
-                        into your team
-                    </h1>
+                    <h1>Powerful insights into your team</h1>
                     <p class="description">
-                        Project planning and time tracking <br />
-                        for agile teams
+                        Project planning and time tracking for agile teams
                     </p>
                     <div class="btn-container">
                         <button class="btn-primary">Schedule a demo</button>
