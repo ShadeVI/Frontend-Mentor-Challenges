@@ -50,6 +50,12 @@ const db = [
         image: "desktop-design-slide-1.jpg",
         level: "Newbie",
     },
+
+    {
+        name: "project-tracking-intro-component-master",
+        image: "desktop-design.jpg",
+        level: "Junior",
+    },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
