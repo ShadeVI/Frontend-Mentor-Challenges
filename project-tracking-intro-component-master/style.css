@@ -118,8 +118,19 @@ nav > ul > li:last-child > a {
     margin: auto;
 }
 
-.hide-hamburger {
+.separator-line-menu {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grayishBlue);
+}
+
+.hamburger {
+    text-align: right;
     display: none;
+}
+
+.hamburger img {
+    cursor: pointer;
 }
 
 /* MAIN CONTENT */
@@ -214,15 +225,26 @@ img.illustration-devices {
 @media screen and (max-width: 500px) {
     /* MOBILE MENU */
 
+    .hamburger {
+        display: block;
+    }
+
+    .hide-mobile-menu {
+        display: none;
+    }
+
+    /* MOBILE MENU STYLE */
+
     .mobile-menu-container {
         position: absolute;
         top: 100px;
-        left: 25%;
-        width: 50%;
+        left: 10%;
+        width: 80%;
         padding: 20px;
         background-color: #fff;
         box-shadow: -2px 5px 8px 2px rgba(0, 0, 0, 0.1);
         z-index: 10;
+        display: none;
     }
 
     .mobile-menu {
@@ -231,20 +253,25 @@ img.illustration-devices {
     }
 
     .mobile-menu li {
+        width: 100%;
+        text-align: center;
         margin: 10px auto;
     }
 
-    .hamburger {
-        text-align: right;
-        cursor: pointer;
-    }
-
-    .hide-mobile-menu {
+    .separator-circle-menu {
         display: none;
     }
 
-    .hide-hamburger {
+    .separator-line-menu {
         display: block;
+    }
+
+    .fadeInMobileMenuAnimation {
+        animation: fadeInMenuMobile 0.3s forwards;
+    }
+
+    .fadeOutMobileMenuAnimation {
+        animation: fadeOutMenuMobile 0.3s forwards;
     }
 
     /* MAIN CONTENT */
@@ -282,5 +309,25 @@ img.illustration-devices {
 
     .btn-description {
         font-size: 0.7rem;
+    }
+
+    @keyframes fadeInMenuMobile {
+        0% {
+            display: block;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOutMenuMobile {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            display: none;
+            opacity: 0;
+        }
     }
 }
