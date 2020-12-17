@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+    width: 650px;
+    height: 250px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.image-wrapper {
+    flex: 0.4;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    max-height: 100%;
+}
+
+.content {
+    flex: 0.6;
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.content > h1 {
+    font-size: 18px;
+    color: var(--VeryDarkGrayishBlue);
+    line-height: 1.4;
+}
+
+.content > p {
+    color: var(--DesaturatedDarkBlue);
+    line-height: 1.7;
+}
+
+.share-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-section > div {
+    flex: 1;
+}
+
+.avatar-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 40px;
+    height: 40px;
+}
+
+.avatar-wrapper img {
+    max-width: 100%;
+}
+
+.author-info {
+    margin-left: 15px;
+}
+
+.author {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+}
+
+.date {
+    color: var(--GrayishBlue);
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.share-icon {
+    text-align: right;
+}
+
+.share-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.share-icon-wrapper:hover {
+    background-color: var(--DesaturatedDarkBlue);
+}
+
+.share-icon-wrapper:hover > svg path {
+    fill: #fff;
+}
+
+/* TOOLTIP DESKTOP */
+
+.tooltip-desktop {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: -200%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--VeryDarkGrayishBlue);
+    cursor: initial;
+}
+
+.share-icon-wrapper:hover .tooltip-desktop {
+    display: flex;
+}
+
+.tooltip-desktop::after {
+    content: "";
+    position: absolute;
+    border: 10px solid var(--VeryDarkGrayishBlue);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    border-color: var(--VeryDarkGrayishBlue) transparent transparent transparent;
+}
+
+.tooltip-desktop > *:not(:first-child) {
+    margin-left: 15px;
+}
+
+.tooltip-desktop span {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--GrayishBlue);
+}
