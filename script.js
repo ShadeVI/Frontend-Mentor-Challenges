@@ -56,6 +56,12 @@ const db = [
         image: "desktop-design.jpg",
         level: "Junior",
     },
+
+    {
+        name: "article-preview-component-master",
+        image: "desktop-design.jpg",
+        level: "Newbie",
+    },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
