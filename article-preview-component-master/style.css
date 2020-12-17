@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-    width: 650px;
+    max-width: 650px;
     height: 250px;
     display: flex;
     border-radius: 8px;
@@ -66,10 +66,6 @@ body {
     align-items: center;
 }
 
-.share-section > div {
-    flex: 1;
-}
-
 .avatar-wrapper {
     overflow: hidden;
     border-radius: 50%;
@@ -83,6 +79,7 @@ body {
 
 .author-info {
     margin-left: 15px;
+    flex: 0.6;
 }
 
 .author {
@@ -98,6 +95,7 @@ body {
 
 .share-icon {
     text-align: right;
+    flex: 0.4;
 }
 
 .share-icon-wrapper {
@@ -133,8 +131,10 @@ body {
     cursor: initial;
 }
 
-.share-icon-wrapper:hover .tooltip-desktop {
+.tooltip-desktop.show,
+.active-share.show {
     display: flex;
+    align-items: center;
 }
 
 .tooltip-desktop::after {
@@ -147,12 +147,62 @@ body {
     border-color: var(--VeryDarkGrayishBlue) transparent transparent transparent;
 }
 
-.tooltip-desktop > *:not(:first-child) {
+.tooltip-desktop > *:not(:first-child),
+.active-share > *:not(:first-child) {
     margin-left: 15px;
 }
 
-.tooltip-desktop span {
+.share-text {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--GrayishBlue);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 300px;
+        margin: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .image-wrapper {
+        max-height: 200px;
+    }
+
+    .image-wrapper img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .content > h1 {
+        margin: 20px 20px 0 20px;
+        font-size: 15px;
+    }
+
+    .content > p {
+        font-size: 12px;
+        margin: 15px 20px 20px 20px;
+        line-height: 1.5;
+    }
+
+    .share-section {
+        margin: 0;
+        padding: 20px 20px;
+    }
+
+    .share-section.active {
+        background-color: var(--VeryDarkGrayishBlue);
+    }
 }
