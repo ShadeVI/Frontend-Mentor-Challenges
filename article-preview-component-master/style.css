@@ -28,11 +28,14 @@ body {
     height: 250px;
     display: flex;
     border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .image-wrapper {
     flex: 0.4;
     overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .image-wrapper img {
@@ -47,6 +50,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .content > h1 {
