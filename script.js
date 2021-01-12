@@ -12,6 +12,12 @@ const db = [
         skills: ["HTML", "CSS"],
     },
     {
+        name: "profile-card-component-scss-main",
+        image: "desktop-design.jpg",
+        level: "Newbie",
+        skills: ["HTML", "SCSS"],
+    },
+    {
         name: "single-price-grid-component-master",
         image: "desktop-design.jpg",
         level: "Newbie",
