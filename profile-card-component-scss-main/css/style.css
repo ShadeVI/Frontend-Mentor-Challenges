@@ -23,24 +23,10 @@ body {
           align-items: center;
   font-family: "Kumbh Sans", sans-serif;
   background-color: #19a2ae;
-}
-
-.bg-circle-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  max-width: 100%;
-}
-
-.bg-circle-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(30%, 70%);
-          transform: translate(30%, 70%);
-  max-width: 100%;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -50vw bottom 50vh, right -50vw top 50vh;
+  background-size: 100%, 100%;
 }
 
 .card {
@@ -62,7 +48,6 @@ body {
   border-radius: 15px;
   background-color: #eee;
   overflow: hidden;
-  z-index: 1;
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
