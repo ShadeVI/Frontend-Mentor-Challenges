@@ -63,6 +63,8 @@ body {
   background-color: #eee;
   overflow: hidden;
   z-index: 1;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -75,7 +77,6 @@ body {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  position: relative;
 }
 
 .card .card-main-profile-pic {
