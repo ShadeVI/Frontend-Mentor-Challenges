@@ -81,18 +81,18 @@ body {
 .card .card-main-profile-pic {
   width: 80px;
   height: 80px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  /* 
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+  margin: calc((-80px - 5px) / 2) auto 0;
   border-radius: 50%;
   border: 5px solid #eee;
   background-color: #eee;
 }
 
 .card .card-main-title {
-  margin-top: 60px;
   text-align: center;
   font-weight: 700;
   color: #2d3248;
