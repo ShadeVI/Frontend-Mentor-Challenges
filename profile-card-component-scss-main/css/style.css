@@ -58,15 +58,15 @@ body {
   display: block;
 }
 
-.card .card-main {
+.card-main {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-.card .card-main-profile-pic {
-  width: 80px;
-  height: 80px;
+.card-main-profile-pic {
+  max-width: 80px;
+  max-height: 80px;
   /* 
             position: absolute;
             top: 0;
@@ -78,25 +78,25 @@ body {
   background-color: #eee;
 }
 
-.card .card-main-title {
+.card-main-title {
   text-align: center;
   font-weight: 700;
   color: #2d3248;
   font-size: 18px;
 }
 
-.card .card-main-title span {
+.card-main-title span {
   font-weight: 400;
   color: #6a6f81;
   margin-left: 5px;
 }
 
-.card .card-main p {
+.card-main p {
   text-align: center;
   color: #6a6f81;
 }
 
-.card .card-stats {
+.card-stats {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -116,20 +116,20 @@ body {
   border-top: 1px solid #969696;
 }
 
-.card .card-stats-box {
+.card-stats-box {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
 }
 
-.card .card-stats-box h4,
-.card .card-stats-box p {
+.card-stats-box h4,
+.card-stats-box p {
   color: #2d3248;
   margin: 10px auto;
 }
 
-.card .card-stats-box p {
+.card-stats-box p {
   color: #6a6f81;
   font-size: 12px;
 }
