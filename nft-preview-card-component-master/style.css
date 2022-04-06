@@ -162,9 +162,9 @@ p {
 
 @media screen and (max-width: 600px) {
   :root{
-    --fs: 14px;
+    --fs: 12px;
   }
   .card {
-    width: 300px;
+    width: 275px;
   }
 }
