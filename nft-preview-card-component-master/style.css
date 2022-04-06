@@ -113,6 +113,12 @@ p {
 .attribution {
   position: fixed;
   bottom: 10px;
+  color:white;
+}
+
+.attribution > a {
+  color: var(--color-highlight);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
