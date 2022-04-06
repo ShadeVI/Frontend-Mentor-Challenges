@@ -94,6 +94,13 @@ const db = [
     level: "Newbie",
     skills: ["HTML", "CSS"],
   },
+
+  {
+    name: "nft-preview-card-component-master",
+    image: "desktop-design.jpg",
+    level: "Newbie",
+    skills: ["HTML", "CSS"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
