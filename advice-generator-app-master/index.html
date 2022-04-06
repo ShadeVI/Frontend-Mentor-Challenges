@@ -11,15 +11,38 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
-
-    "<!-- Advice text goes here -->"
-
+    <main class="box">
+      <div class="advice-title">Advice #<span id="adviceID">123</span></div>
+      <section class="advice-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam iste
+        suscipit neque sequi, a consequuntur soluta, itaque aspernatur accusamus
+        necessitatibus laborum ad quis quas maxime delectus excepturi error
+        fugiat ratione!
+      </section>
+      <div class="divider">
+        <picture>
+          <source
+            media="(min-width: 375px)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <img src="./images/pattern-divider-mobile.svg" />
+        </picture>
+      </div>
+      <button id="new-advice" class="dice-btn">
+        <img src="./images/icon-dice.svg" alt="button roll new advice" />
+      </button>
+    </main>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

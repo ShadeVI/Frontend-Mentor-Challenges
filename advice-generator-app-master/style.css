@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --light-cyan: hsl(193, 38%, 86%);
+  --accent: hsl(150, 100%, 66%);
+
+  /* NEUTRAL */
+  --bg-main: hsl(218, 23%, 16%);
+  --bg-box: hsl(217, 19%, 24%);
+  --color-text: hsl(217, 19%, 38%);
+
+  --fs: 28px;
+  --fw-8: 800;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
