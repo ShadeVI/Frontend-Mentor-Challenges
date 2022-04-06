@@ -27,4 +27,77 @@ body {
   display: grid;
   place-items: center;
   justify-content: center;
+  background-color: var(--bg-main);
+  color: var(--light-cyan);
+}
+
+.box {
+  width: 400px;
+  background-color: var(--bg-box);
+  padding: 2.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.advice-title {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.advice-text {
+  font-weight: var(--fw-8);
+  line-height: 1.5;
+}
+
+.divider {
+  max-width: 100%;
+}
+
+.divider img {
+  width: 100%;
+  margin: 30px auto 15px;
+}
+
+.dice-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  padding: 0.6rem;
+  border: none;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent);
+}
+
+.dice-btn > img {
+  width: 70%;
+}
+
+
+/* FOOTER */
+
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  left: 15px;
+  transform: rotate(-90deg);
+  transform-origin: 0;
+  color: var(--light-cyan);
+}
+
+.attribution > a {
+  color: var(--accent);
+}
+
+.attribution >  a:hover {
+  text-decoration-style: wavy;
+  text-decoration-color: var(--accent);
 }
