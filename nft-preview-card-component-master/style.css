@@ -151,8 +151,11 @@ p {
 
 .attribution {
   position: fixed;
-  bottom: 10px;
+  left: 20px;
+  bottom: 5px;
   color:white;
+  transform: rotate(-90deg);
+  transform-origin: 0;
 }
 
 .attribution > a {
