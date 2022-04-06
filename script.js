@@ -87,6 +87,13 @@ const db = [
     level: "Newbie",
     skills: ["HTML", "CSS"],
   },
+
+  {
+    name: "qr-code-component-master",
+    image: "desktop-design.jpg",
+    level: "Newbie",
+    skills: ["HTML", "CSS"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
