@@ -101,6 +101,13 @@ const db = [
     level: "Newbie",
     skills: ["HTML", "CSS"],
   },
+
+  {
+    name: "advice-generator-app-master",
+    image: "desktop-design.jpg",
+    level: "Junior",
+    skills: ["HTML", "CSS", "JS"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
