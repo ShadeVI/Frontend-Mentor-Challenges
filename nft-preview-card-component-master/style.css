@@ -99,7 +99,7 @@ p {
   font-weight: 700;
 }
 
-.descriptions:hover > h1 {
+.descriptions > h1:hover {
   color: var(--color-highlight)
 }
 
