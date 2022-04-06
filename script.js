@@ -136,8 +136,6 @@ function formatName(name) {
 }
 
 function formatSkillsList(listSkills) {
-  const stringList = listSkills
-    .map((skill, i) => (i === listSkills.length - 1 ? skill : skill + " - "))
-    .join("");
+  const stringList = listSkills.join(" - ");
   return stringList;
 }
