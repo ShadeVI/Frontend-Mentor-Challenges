@@ -118,11 +118,43 @@ header {
   display: none;
 }
 
+/* ABOUT SECTION */
+
+.about {
+  padding: var(--mx);
+  display: flex;
+  align-items: flex-end;
+}
+
+.about > img {
+  width: 70%;
+  margin-right: -115px;
+}
+
+.about-text {
+  padding: var(--mx) 0 0 var(--mx);
+  background-color: var(--white);
+}
+
+.about-text > h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-text > p {
+  font-size: 0.7rem;
+  color: var(--dark-gray);
+}
+
 /* UTILITY CLASSES */
 
 .hidden {
   display: none;
 }
+
+
+
 
 
 
