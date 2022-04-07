@@ -24,10 +24,25 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="logo-container">
-          <img src="images/logo.svg" alt="looping studio" />
+        <div class="top-nav">
+          <div class="logo-container">
+            <img src="images/logo.svg" alt="looping studio" />
+          </div>
+          <button aria-label="menu button" class="menu-btn">
+            <img
+              class="menu-open"
+              src="./images/icon-hamburger.svg"
+              alt="menu open"
+            />
+            <img
+              class="menu-close hidden"
+              src="./images/icon-close.svg"
+              alt="menu open"
+            />
+          </button>
         </div>
-        <nav class="nav-links">
+
+        <nav class="nav-links close">
           <a class="nav-link" href="">About</a>
           <a class="nav-link" href="">Carrers</a>
           <a class="nav-link" href="">Events</a>

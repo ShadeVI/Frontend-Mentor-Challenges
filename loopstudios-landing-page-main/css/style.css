@@ -20,6 +20,10 @@ html {
   font-size: var(--fs);
 }
 
+body {
+  min-width: 275px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -36,7 +40,6 @@ header {
   background: url(../images/desktop/image-hero.jpg) no-repeat center;
   background-size: cover;
   background-color: var(--black);
-  height: 70vh;
   padding: 2.5rem var(--mx);
 }
 
@@ -47,6 +50,12 @@ header {
   margin-bottom: 5rem;
 }
 
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
 .logo-container > img {
   display: block;
   object-fit: cover;
@@ -54,15 +63,12 @@ header {
 
 /* LINKS */
 
-.nav-links {
-  font-size: 1;
-}
-
 .nav-link:not(:last-child) {
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .nav-link {
+  padding: 0.5rem;
   position: relative;
 }
 
@@ -82,15 +88,93 @@ header {
   width: 50%;
 }
 
+.nav-link.mobile {
+  display: none;
+  visibility: hidden;
+}
+
 /* HEADING TEXT IN HEADER */
 
 .heading-container {
   border: 2px solid var(--white);
-  padding: 1.8rem;
-  width: 60%;
+  padding: 1.6rem;
+  width: 50%;
+  margin: 2.1rem 0;
 }
 
 .heading-text {
   text-transform: uppercase;
   color: var(--white);
+  font-size: 2.5rem;
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.3rem;
+  display: none;
+}
+
+/* UTILITY CLASSES */
+
+.hidden {
+  display: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 675px) {
+  
+  :root {
+    --mx: 5%;
+    --fs: 12px;
+  }
+
+  header{
+    height: 100vh;
+  }
+
+  .logo-container {
+    z-index: 2;
+  }
+  .menu-btn {
+    display: initial;
+    z-index: 2;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: var(--mx);
+    background-color: var(--black);
+  }
+
+  .nav-links.close {
+    left: 100%;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  /* HEADING TEXT */
+  .heading-container {
+    width: 100%;
+    margin-top: 15rem;
+  }
+
 }
