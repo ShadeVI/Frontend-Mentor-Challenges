@@ -92,6 +92,25 @@ body {
   filter: blur(2px)
 }
 
+.dice-btn:hover > img {
+  animation: rolling 1.5s infinite ease-in-out;
+}
+
+/* ANIMATION */
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(365deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
 
 /* FOOTER */
 
