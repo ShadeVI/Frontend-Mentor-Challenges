@@ -5,6 +5,7 @@ const idAdviceDOM = document.getElementById("adviceID");
 const quoteDOM = document.getElementById("quote");
 const btnNewAdvice = document.querySelector("#new-advice");
 const boxDOM = document.querySelector(".box");
+const alertSpamDOM = document.querySelector(".alert-spam-protection");
 
 let PreventSpam = false;
 
@@ -21,7 +22,14 @@ const fetchAPI = async (url) => {
 };
 
 const addNewAdvice = async () => {
+  if (PreventSpam) {
+    alertSpamDOM.classList.remove("hidden");
+    setTimeout(() => {
+      alertSpamDOM.classList.add("hidden");
+    }, 1500);
+  }
   if (!PreventSpam) {
+    alertSpamDOM.classList.add("hidden");
     PreventSpam = true;
     boxDOM.classList.add("blur");
 
@@ -33,6 +41,6 @@ const addNewAdvice = async () => {
     boxDOM.classList.remove("blur");
     setTimeout(() => {
       PreventSpam = false;
-    }, 1500);
+    }, 2000);
   }
 };
