@@ -159,6 +159,7 @@ header {
     left: 0;
     padding-left: var(--mx);
     background-color: var(--black);
+    transition: left 0.5s ease-in-out;
   }
 
   .nav-links.close {
