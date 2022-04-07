@@ -1,0 +1,28 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fs: 15px;
+  /* PRIMARY COLORS */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+html {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+}
+
+body {
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
