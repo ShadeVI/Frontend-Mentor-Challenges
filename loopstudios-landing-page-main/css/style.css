@@ -11,18 +11,86 @@
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 55%);
   --very-dark-gray: hsl(0, 0%, 41%);
+  --mx: 10%;
 }
 
 html {
   font-family: 'Alata', sans-serif;
   font-weight: 400;
-}
-
-body {
-
+  font-size: var(--fs);
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+header {
+  background: url(../images/desktop/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  background-color: var(--black);
+  height: 70vh;
+  padding: 2.5rem var(--mx);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.logo-container > img {
+  display: block;
+  object-fit: cover;
+}
+
+/* LINKS */
+
+.nav-links {
+  font-size: 1;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position:absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav-link:hover::before{
+  left: 25%;
+  width: 50%;
+}
+
+/* HEADING TEXT IN HEADER */
+
+.heading-container {
+  border: 2px solid var(--white);
+  padding: 1.8rem;
+  width: 60%;
+}
+
+.heading-text {
+  text-transform: uppercase;
+  color: var(--white);
 }
