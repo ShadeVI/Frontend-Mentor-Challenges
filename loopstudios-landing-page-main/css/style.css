@@ -36,6 +36,16 @@ a {
   font-size: 0.8rem;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
+picture {
+  display: block;
+  height: 100%;
+}
+
 header {
   background: url(../images/desktop/image-hero.jpg) no-repeat center;
   background-size: cover;
@@ -152,9 +162,86 @@ header {
 /* CREATIONS SECTION */
 
 .creations {
-  
+  margin: var(--mx);
 }
 
+.creations-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.creations-title > h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.creations-btn {
+  border: 1px solid var(--black);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: var(--fs);
+  cursor: pointer;
+  width: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.creations-btn-mobile {
+  display: none;
+}
+
+.creations-btn:hover {
+  background-color: var(--black);
+  color: var(--white)
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.creation {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.creation picture {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.creation img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creation > h3 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1.8rem;
+  width: 80%;
+  transition: color 0.3s ease-in-out;
+}
+
+.creation:hover {
+  cursor: pointer;
+}
+
+.creation:hover > picture {
+  opacity: 0.2;
+}
+
+.creation:hover > h3 {
+  color: var(--black);
+}
 /* UTILITY CLASSES */
 
 .hidden {
@@ -163,7 +250,7 @@ header {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 750px) {
   
   :root {
     --mx: 5%;
@@ -237,4 +324,51 @@ header {
     margin: 0 1rem;
   }
 
+  /* CREATIONS */
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .creation > h3 {
+    bottom: 5%;
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .creations-title > h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .creation {
+    height: auto;
+  }
+
+  .creation img {
+    object-fit: scale-down;
+  }
+
+  .creation > h3 {
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+  }
+
+  .creations-btn {
+    display: none;
+  }
+
+  .creations-btn-mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }
