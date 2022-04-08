@@ -85,7 +85,7 @@ header {
 .nav-link::before {
   content: "";
   position:absolute;
-  bottom: -8px;
+  bottom: 0px;
   left: 50%;
   width: 0;
   height: 2px;
@@ -242,13 +242,79 @@ header {
 .creation:hover > h3 {
   color: var(--black);
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  height: 130px;
+  display: flex;
+  padding: 2.5rem var(--mx);
+}
+
+.footer > div {
+  flex: 1;
+}
+
+.footer-left img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-left .nav-link {
+  padding-left: 0;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  margin-left: 0.75rem;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.social{
+  width: 100%;
+  display: block;
+}
+
+.social-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.social-link:hover::before {
+  width: 50%;
+  left: 25%;
+}
+
+.rights {
+  font-size: .8rem;
+  color: var(--dark-gray);
+}
+
+
 /* UTILITY CLASSES */
 
 .hidden {
   display: none;
 }
 
-/* MEDIA QUERIES */
+/*------- MEDIA QUERIES ----------*/
 
 @media screen and (max-width: 750px) {
   
@@ -290,6 +356,7 @@ header {
     text-transform: uppercase;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    width: fit-content;
   }
 
   /* HEADING TEXT */
@@ -369,6 +436,28 @@ header {
 
   .creations-btn-mobile {
     display: block;
+    margin: 0 auto 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: auto;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-left .nav-link {
+    display: block;
+    font-size: 0.8rem;
     margin: 0 auto;
+    text-transform: capitalize;
+  }
+
+  .footer-right {
+    text-align: center;
   }
 }
