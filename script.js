@@ -108,6 +108,13 @@ const db = [
     level: "Junior",
     skills: ["HTML", "CSS", "JS"],
   },
+  ,
+  {
+    name: "loopstudios-landing-page-master",
+    image: "desktop-design.jpg",
+    level: "Junior",
+    skills: ["HTML", "CSS", "JS"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
