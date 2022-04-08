@@ -1,5 +1,5 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -15,7 +15,7 @@
 }
 
 html {
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   font-weight: 400;
   font-size: var(--fs);
 }
@@ -24,8 +24,13 @@ body {
   min-width: 275px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -51,6 +56,7 @@ header {
   background-size: cover;
   background-color: var(--black);
   padding: 2.5rem var(--mx);
+  height: 500px;
 }
 
 .navbar {
@@ -84,7 +90,7 @@ header {
 
 .nav-link::before {
   content: "";
-  position:absolute;
+  position: absolute;
   bottom: 0px;
   left: 50%;
   width: 0;
@@ -93,7 +99,7 @@ header {
   transition: width 0.5s ease, left 0.5s ease;
 }
 
-.nav-link:hover::before{
+.nav-link:hover::before {
   left: 25%;
   width: 50%;
 }
@@ -109,7 +115,7 @@ header {
   border: 2px solid var(--white);
   padding: 1.6rem;
   width: 50%;
-  margin: 2.1rem 0;
+  margin: 10rem 0;
 }
 
 .heading-text {
@@ -137,9 +143,9 @@ header {
 }
 
 .about > img {
-  width: 500px;
+  max-width: 1000px;
   width: 70%;
-  margin-right: -115px;
+  margin-right: -315px;
 }
 
 .about-text {
@@ -193,7 +199,7 @@ header {
 
 .creations-btn:hover {
   background-color: var(--black);
-  color: var(--white)
+  color: var(--white);
 }
 
 .grid {
@@ -282,7 +288,7 @@ header {
   height: 20px;
 }
 
-.social{
+.social {
   width: 100%;
   display: block;
 }
@@ -303,10 +309,9 @@ header {
 }
 
 .rights {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--dark-gray);
 }
-
 
 /* UTILITY CLASSES */
 
@@ -317,13 +322,12 @@ header {
 /*------- MEDIA QUERIES ----------*/
 
 @media screen and (max-width: 750px) {
-  
   :root {
     --mx: 5%;
     --fs: 12px;
   }
   header {
-    height: 50vh;
+    height: 100vh;
   }
 
   .logo-container {
@@ -361,8 +365,8 @@ header {
 
   /* HEADING TEXT */
   .heading-container {
-    width: 100%;
-    margin-top: 10rem;
+    width: 50%;
+    margin-top: 25%;
   }
 
   /* ABOUT SECTION */
@@ -402,10 +406,13 @@ header {
     bottom: 5%;
     font-size: 2rem;
   }
-
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
+  .heading-container {
+    width: 100%;
+    margin-top: 50%;
+  }
   .grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
