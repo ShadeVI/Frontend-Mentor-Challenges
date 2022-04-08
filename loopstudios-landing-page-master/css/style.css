@@ -143,8 +143,7 @@ header {
 }
 
 .about > img {
-  max-width: 1000px;
-  width: 70%;
+  width: 100%;
   margin-right: -315px;
 }
 
