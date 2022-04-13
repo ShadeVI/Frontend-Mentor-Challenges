@@ -108,12 +108,19 @@ const db = [
     level: "Junior",
     skills: ["HTML", "CSS", "JS"],
   },
-  ,
+
   {
     name: "loopstudios-landing-page-master",
     image: "desktop-design.jpg",
     level: "Junior",
     skills: ["HTML", "CSS", "JS"],
+  },
+
+  {
+    name: "order-summary-component-master",
+    image: "desktop-design.jpg",
+    level: "Newbie",
+    skills: ["HTML", "CSS"],
   },
 ];
 
