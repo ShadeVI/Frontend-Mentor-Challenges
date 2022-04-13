@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-headers: "Big Shoulders Display", cursive;
+  --fw-700: 700;
+  --ff: "Lexend Deca", sans-serif;
+  --fw-400: 400;
+
+  /* COLORS */
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-v-dark-cyan: hsl(179, 100%, 13%);
+  /* (paragraphs) */
+  --clr-p: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --clr-light-gray: hsl(0, 0%, 95%);
+
+  --fs: 15px;
+}
+
+html {
+  font-size: var(--fs);
+  font-family: var(--ff);
+  font-weight: var(--fw-400);
+}
+
+h2 {
+  font-family: var(--ff-headers);
+  font-weight: var(--fw-700);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main.grid {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.orange {
+  background-color: var(--clr-orange);
+  color: var(--clr-orange);
+}
+
+.cyan {
+  background-color: var(--clr-cyan);
+  color: var(--clr-cyan);
+}
+
+.dark-cyan {
+  background-color: var(--clr-v-dark-cyan);
+  color: var(--clr-v-dark-cyan);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--column {
+  padding: 2rem;
+}
+
+.grid--img {
+  width: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.grid--columnTitle {
+  text-transform: uppercase;
+  color: var(--clr-light-gray);
+  margin-bottom: 1.25rem;
+}
+
+.grid--columnDescription {
+  color: var(--clr-p);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.grid--columnBtn {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3rem;
+  padding: 0.65rem 1.15rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.grid--columnBtn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 450px) {
+  .grid {
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  main.grid {
+    width: 225px;
+  }
+
+  .grid--column {
+    padding: 1.5rem;
+  }
+}
