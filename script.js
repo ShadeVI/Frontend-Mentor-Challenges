@@ -122,6 +122,13 @@ const db = [
     level: "Newbie",
     skills: ["HTML", "CSS"],
   },
+
+  {
+    name: "3-column-preview-card-component-master",
+    image: "desktop-design.jpg",
+    level: "Newbie",
+    skills: ["HTML", "CSS"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
