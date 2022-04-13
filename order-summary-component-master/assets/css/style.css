@@ -4,6 +4,153 @@
   padding: 0;
 }
 
+:root {
+  --clr-secondary: hsl(225, 100%, 94%);
+  --clr-primary: hsl(245, 75%, 52%);
+
+  --clr-n-pale-blue: hsl(225, 100%, 98%);
+  --clr-n-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-n-dark-blue: hsl(223, 47%, 23%);
+
+  --clr-white: hsl(255, 0%, 100%);
+
+  --fs: 16px;
+  --fw-bold: 500;
+  --fw-v-bold: 700;
+  --fw-vv-bold: 900;
+}
+
 html {
   font-family: "Red Hat Display", sans-serif;
+  font-size: var(--fs);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: var(--clr-secondary);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  max-width: 400px;
+  width: 95%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--clr-white);
+  margin: 0 auto;
+}
+
+.card--content {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.card--title {
+  font-weight: 900;
+}
+
+.card--description {
+  color: var(--clr-n-desaturated-blue);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.card--plan {
+  border-radius: 1rem;
+  background-color: var(--clr-n-pale-blue);
+  padding: 1rem;
+}
+
+.card--planContent {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.card--planType {
+  font-weight: var(--fw-vv-bold);
+}
+
+.card--planPrice {
+  color: var(--clr-n-desaturated-blue);
+}
+
+.card--planChange {
+  font-weight: var(--fw-v-bold);
+  font-size: 0.8rem;
+}
+.card--planChange:hover {
+  text-decoration: none;
+  color: var(--clr-n-desaturated-blue);
+}
+
+.btn {
+  padding: 0.75rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: var(--fw-v-bold);
+  color: var(--clr-n-desaturated-blue);
+  font-weight: var(--fw-v-bold);
+}
+
+.btn:hover {
+  color: var(--clr-n-dark-blue);
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.btn-primary:hover {
+  filter: opacity(75%);
+  color: var(--clr-white);
+}
+
+.btn-shadow {
+  box-shadow: 0px 10px 55px var(--clr-n-desaturated-blue);
+}
+
+.card--title,
+.card--description,
+.card--plan,
+.btn {
+  margin-bottom: 1rem;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  position: fixed;
+  bottom: 0.8rem;
+  left: 0.8rem;
 }
