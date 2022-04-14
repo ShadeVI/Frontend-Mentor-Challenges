@@ -24,6 +24,16 @@ html {
   font-family: var(--ff);
   font-size: var(--fs);
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 80%;
+  max-width: 400px;
+}
 
 h1,
 button {
@@ -33,4 +43,15 @@ button {
 p,
 span {
   color: var(--lightGrey);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
 }
