@@ -85,8 +85,9 @@ img {
   background-color: var(--darkBlue);
   padding: 1.5rem;
   border-radius: 1.25rem;
-  min-width: 325px;
   max-width: 400px;
+  min-width: 225px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -210,4 +211,12 @@ img {
   color: var(--mediumGrey);
   text-decoration-style: wavy;
   text-decoration-color: var(--mediumGrey);
+}
+
+@media screen and (max-width: 400px) {
+  .rateWrapper {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+  }
 }
