@@ -176,4 +176,14 @@ img {
   position: fixed;
   bottom: 0.5rem;
   left: 0.5rem;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--orange);
+}
+.attribution a:hover {
+  color: var(--mediumGrey);
+  text-decoration-style: wavy;
+  text-decoration-color: var(--mediumGrey);
 }
