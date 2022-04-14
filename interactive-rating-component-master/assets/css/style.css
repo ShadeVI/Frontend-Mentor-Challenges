@@ -1,3 +1,5 @@
+@import url("./success.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@
   /* Colors Primary*/
 
   --orange: hsl(25, 97%, 53%);
+  --lightOrange: hsl(25, 79%, 59%);
 
   /* Neutral */
 
@@ -17,6 +20,7 @@
   --lightGrey: hsl(217, 12%, 63%);
   --mediumGrey: hsl(216, 12%, 54%);
   --darkBlue: hsl(213, 19%, 18%);
+  --darkBlueTransparent: hsla(213, 19%, 28%, 0.5);
   --veryDarkBlue: hsl(216, 12%, 8%);
 }
 
@@ -54,13 +58,25 @@ img {
 
 .circle {
   border-radius: 100%;
-  background-color: hsla(213, 19%, 28%, 0.5);
+  background-color: var(--darkBlueTransparent);
 }
 
 .flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-lightOrange {
+  color: var(--lightOrange);
 }
 
 /* CARD */
@@ -105,7 +121,6 @@ img {
 .rateWrapper {
   width: 50px;
   height: 50px;
-
   overflow: hidden;
 }
 
