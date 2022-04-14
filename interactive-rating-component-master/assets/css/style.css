@@ -170,6 +170,30 @@ img {
   background-color: var(--orange);
 }
 
+/* modal */
+.modal {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--orange);
+  text-align: center;
+  border-radius: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.75s ease;
+}
+
+.showModal {
+  opacity: 1;
+  visibility: unset;
+  top: 2rem;
+}
+
 /* footer */
 
 .attribution {
