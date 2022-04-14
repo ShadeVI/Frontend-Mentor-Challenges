@@ -26,7 +26,7 @@
       <!-- Rating state start -->
       <section class="card">
         <form class="form">
-          <div class="iconWrapper">
+          <div class="iconWrapper circle flexCenter">
             <img src="./assets/images/icon-star.svg" alt="star" />
           </div>
           <h1 class="title">How did we do?</h1>
@@ -35,11 +35,56 @@
             feedback is appreciated to help us improve our offering!
           </p>
           <div class="ratingWrapper">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
+            <div class="rateWrapper circle">
+              <input
+                class="rateRadio"
+                type="radio"
+                name="rate"
+                id="rate-1"
+                value="1"
+              />
+              <label class="rateNumber flexCenter" for="rate-1">1</label>
+            </div>
+            <div class="rateWrapper circle">
+              <input
+                class="rateRadio"
+                type="radio"
+                name="rate"
+                id="rate-2"
+                value="2"
+              />
+              <label class="rateNumber flexCenter" for="rate-2">2</label>
+            </div>
+            <div class="rateWrapper circle">
+              <input
+                class="rateRadio"
+                type="radio"
+                name="rate"
+                id="rate-3"
+                value="3"
+              />
+              <label class="rateNumber flexCenter" for="rate-3">3</label>
+            </div>
+            <div class="rateWrapper circle">
+              <input
+                class="rateRadio"
+                type="radio"
+                name="rate"
+                id="rate-4"
+                value="4"
+              />
+              <label class="rateNumber flexCenter" for="rate-4">4</label>
+            </div>
+            <div class="rateWrapper circle">
+              <input
+                class="rateRadio"
+                type="radio"
+                name="rate"
+                id="rate-5"
+                value="5"
+              />
+              <label class="rateNumber flexCenter" for="rate-5">5</label>
+            </div>
           </div>
           <button class="btn btn-orange">Submit</button>
         </form>

@@ -29,15 +29,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--veryDarkBlue);
 }
 main {
   width: 80%;
-  max-width: 400px;
+  max-width: 375px;
 }
 
 h1,
 button {
-  color: --white;
+  color: var(--white);
 }
 
 p,
@@ -49,6 +50,85 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.circle {
+  border-radius: 100%;
+  background-color: hsla(213, 19%, 28%, 0.5);
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+
+.card {
+  background-color: var(--darkBlue);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+/* FORM */
+
+.form > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  padding: 0.85rem;
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.description {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.ratingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rateWrapper {
+  width: 50px;
+  height: 50px;
+
+  overflow: hidden;
+}
+
+.rateRadio {
+  display: none;
+}
+
+.rateNumber {
+  height: 100%;
+  color: var(--mediumGrey);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rateNumber:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rateRadio:checked + .rateNumber {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+/* Button */
+
+/* footer */
 
 .attribution {
   position: fixed;
