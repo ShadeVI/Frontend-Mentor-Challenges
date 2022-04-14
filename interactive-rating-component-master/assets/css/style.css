@@ -39,6 +39,7 @@ main {
 h1,
 button {
   color: var(--white);
+  font-family: var(--ff);
 }
 
 p,
@@ -127,6 +128,29 @@ img {
 }
 
 /* Button */
+
+.btn {
+  display: block;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 0.65rem 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.btn-orange {
+  background-color: var(--orange);
+}
 
 /* footer */
 
