@@ -140,6 +140,17 @@ const db = [
 const newbieSection = document.querySelector("#newbie .box-container");
 const juniorSection = document.querySelector("#junior .box-container");
 
+const btnsSection = document.querySelectorAll(".btn-section");
+
+btnsSection.forEach((btn) =>
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const { sectionRef } = e.currentTarget.dataset;
+    toggleSection(sectionRef);
+    btn.classList.toggle("btn-section--open");
+  })
+);
+
 db.forEach(({ name, image, level, skills }) => {
   const nameFormatted = formatName(name);
   const listSkillsFormatted = formatSkillsList(skills);
@@ -179,4 +190,17 @@ function formatName(name) {
 function formatSkillsList(listSkills) {
   const stringList = listSkills.join(" - ");
   return stringList;
+}
+
+function toggleSection(sectionRef) {
+  const sections = document.querySelectorAll(
+    `.box-container[data-section-name]`
+  );
+  sections.forEach((section) => {
+    if (section.dataset.sectionName == sectionRef) {
+      section.classList.toggle("box-container--close");
+    } else {
+      section.classList.add("box-container--close");
+    }
+  });
 }

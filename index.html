@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Frontend Mentor Challenges</title>
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <h1>List of my Submissions (Frontend Mentor Challenges)</h1>
-        <main>
-            <section id="newbie">
-                <h2>Newbie Level</h2>
-                <div class="box-container"></div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor Challenges</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>List of my Submissions (Frontend Mentor Challenges)</h1>
+    <main>
+      <section id="newbie">
+        <div class="title-section">
+          <h2>Newbie Level</h2>
+          <div class="btn-section" data-section-ref="newbie">
+            <i class="pulse fas fa-chevron-up"></i>
+          </div>
+        </div>
+        <div
+          class="box-container box-container--close"
+          data-section-name="newbie"
+        ></div>
+      </section>
 
-            <section id="junior">
-                <h2>Junior Level</h2>
-                <div class="box-container"></div>
-            </section>
-        </main>
-        <p class="attribution">
-            Coded by <a href="https://github.com/ShadeVI">ShadeVI</a>
-        </p>
-        <script src="script.js"></script>
-    </body>
+      <section id="junior">
+        <div class="title-section">
+          <h2>Junior Level</h2>
+          <div class="btn-section" data-section-ref="junior">
+            <i class="pulse fas fa-chevron-up"></i>
+          </div>
+        </div>
+        <div
+          class="box-container box-container--close"
+          data-section-name="junior"
+        ></div>
+      </section>
+    </main>
+    <p class="attribution">
+      Coded by <a href="https://github.com/ShadeVI">ShadeVI</a>
+    </p>
+    <script src="script.js"></script>
+  </body>
 </html>

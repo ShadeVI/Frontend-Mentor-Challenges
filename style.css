@@ -35,7 +35,7 @@ h2::after {
   bottom: 0;
   left: 0;
   margin-bottom: -5px;
-  width: 50%;
+  width: 250px;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -60,11 +60,38 @@ main {
   margin: 40px auto;
 }
 
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .box-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
+  max-height: 100vh;
+  transition: max-height 0.5s ease;
+}
+
+.box-container--close {
+  max-height: 0;
+}
+
+.btn-section {
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.pulse {
+  animation: pulseAnimation 1s ease-in-out alternate infinite;
+}
+
+.btn-section--open {
+  transform: rotate(180deg);
 }
 
 .box {
@@ -156,5 +183,17 @@ main {
   }
   .title {
     font-size: 1.1;
+  }
+}
+
+/* ANIMATION */
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
   }
 }
