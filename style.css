@@ -72,7 +72,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 5000px;
   transition: max-height 0.5s ease;
 }
 
@@ -194,6 +194,6 @@ main {
   }
 
   100% {
-    transform: scale(1.5);
+    transform: scale(1.35);
   }
 }
