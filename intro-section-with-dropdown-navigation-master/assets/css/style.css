@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fs: 18px;
+  --ff: "Epilogue", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* COLORS */
+  --white-98: hsl(0, 0%, 98%);
+  --med-gray: hsl(0, 0%, 41%);
+  --black-8: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: var(--fs);
+  font-family: var(--ff);
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* UTILITIES CLASSES */
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER */
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
