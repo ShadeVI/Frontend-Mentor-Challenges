@@ -28,46 +28,86 @@
           <img src="assets/images/logo.svg" alt="snap" />
         </div>
         <ul class="menuLinks flex">
-          <li class="menuLink">
+          <li class="menuLink" data-rel="features">
             <a href="#" class="link">Features</a>
             <div class="linkIcon">
-              <img
-                src="assets/images/icon-arrow-down.svg"
-                alt="icon open link"
-              />
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </div>
+            <div class="submenu hidden">
+              <ul class="submenuList">
+                <li class="submenuLink">
+                  <div class="submenuIcon">
+                    <img src="assets/images/icon-todo.svg" alt="todo" />
+                  </div>
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="submenuLink">
+                  <div class="submenuIcon">
+                    <img src="assets/images/icon-calendar.svg" alt="calendar" />
+                  </div>
+                  <a href="#">Calendar</a>
+                </li>
+                <li class="submenuLink">
+                  <div class="submenuIcon">
+                    <img src="assets/images/icon-planning.svg" alt="planning" />
+                  </div>
+                  <a href="#">Planning</a>
+                </li>
+                <li class="submenuLink">
+                  <div class="submenuIcon">
+                    <img
+                      src="assets/images/icon-reminders.svg"
+                      alt="reminders"
+                    />
+                  </div>
+                  <a href="#">Reminders</a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="menuLink">
             <a href="#" class="link">Company</a>
             <div class="linkIcon">
-              <img
-                src="assets/images/icon-arrow-down.svg"
-                alt="icon open link"
-              />
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </div>
+            <div class="submenu hidden">
+              <ul class="submenuList">
+                <li class="submenuLink">
+                  <a href="#">History</a>
+                </li>
+                <li class="submenuLink">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="submenuLink">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
             </div>
           </li>
           <li class="menuLink">
             <a href="#" class="link">Careers</a>
-            <div class="linkIcon hidden">
-              <img
-                src="assets/images/icon-arrow-down.svg"
-                alt="icon open link"
-              />
-            </div>
           </li>
           <li class="menuLink">
             <a href="#" class="link">About</a>
-            <div class="linkIcon hidden">
-              <img
-                src="assets/images/icon-arrow-down.svg"
-                alt="icon open link"
-              />
-            </div>
           </li>
         </ul>
         <div class="menuBtns">
           <button type="button" class="btn">Login</button>
-          <button type="button" class="btn">Register</button>
+          <button type="button" class="btn btnSecondary">Register</button>
         </div>
         <div class="mobileMenuIcon hidden">
           <img src="assets/images/icon-menu.svg" alt="menu open" />
@@ -83,7 +123,7 @@
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button class="btn">Learn more</button>
+        <button class="btn btnAlternative">Learn more</button>
         <div class="clients">
           <div class="client">
             <img src="assets/images/client-databiz.svg" alt="databiz" />

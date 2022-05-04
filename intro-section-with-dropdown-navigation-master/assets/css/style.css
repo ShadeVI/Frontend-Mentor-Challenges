@@ -25,6 +25,33 @@ html {
 
 body {
   min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--white-98);
+}
+
+/* GLOBALS/GENERICS */
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: calc(var(--fs) - 5px);
+  text-decoration: none;
+  color: var(--med-gray);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  color: var(--med-gray);
+  font-weight: var(--fw-700);
+  cursor: pointer;
 }
 
 /* UTILITIES CLASSES */
@@ -36,6 +63,132 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* NAVBAR TOP */
+.topNav {
+  height: 80px;
+}
+
+.navContainer {
+  margin: 1.5rem;
+}
+
+.logoContainer > img {
+  min-width: 80px;
+}
+
+.menuLinks {
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.menuLink {
+  display: flex;
+  padding: 0.3rem;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menuLink:hover > a {
+  color: var(--black-8);
+  font-weight: var(--fw-700);
+}
+
+.menuLink:hover svg path {
+  stroke: var(--black-8);
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  font-weight: var(--fw-500);
+}
+
+.linkIcon {
+  width: 100%;
+  margin: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SUBMENU */
+.submenu {
+  position: absolute;
+  min-width: 100%;
+  height: fit-content;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -5px var(--med-gray);
+  padding: 0.5rem 1rem;
+}
+
+.submenuList {
+  min-width: 100%;
+}
+
+.menuLink:hover > .submenu {
+  display: initial;
+}
+
+.submenuLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  margin: 0.65rem 0;
+}
+
+.submenuLink > div + a {
+  margin-left: 0.5rem;
+}
+
+.submenuLink > a {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.submenuIcon {
+  width: 15px;
+}
+
+/* BUTTONS */
+
+.btn {
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  color: var(--black-8);
+}
+
+.btnSecondary {
+  border: 1px solid var(--med-gray);
+}
+
+.btnSecondary:hover {
+  border-color: var(--black-8);
+  color: var(--black-8);
+}
+
+.btnAlternative {
+  background-color: var(--black-8);
+  color: var(--white-98);
+}
+
+.btnAlternative:hover {
+  background-color: var(--white-98);
+  color: var(--black-8);
+  border-color: var(--black-8);
 }
 
 /* FOOTER */
