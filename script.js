@@ -174,8 +174,8 @@ db.forEach(({ name, image, level, skills }) => {
         <div class="info">
             <h3 class="title">${nameFormatted}</h3>
             <p class="skills">${listSkillsFormatted}</p>
-            <a class="code" href="https://github.com/ShadeVI/Frontend-Mentor-Challenges/tree/main/${name}"><i class="fab fa-github"></i></a>
-            <a class="live" href="/${name}/index.html"><i class="far fa-eye"></i></a>
+            <a class="code" href="https://github.com/ShadeVI/Frontend-Mentor-Challenges/tree/main/${name}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a class="live" href="/${name}/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
             <p class="level">Level: ${level}</p>
         </div>
     `;
