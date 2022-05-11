@@ -147,8 +147,15 @@ btnsSection.forEach((btn) =>
     e.stopPropagation();
     const { sectionRef } = e.currentTarget.dataset;
     toggleSection(sectionRef);
-    btn.classList.toggle("btn-section--open");
+    btnsSection.forEach(btn => {
+      if (btn.dataset.sectionRef == sectionRef) {
+        btn.classList.toggle("btn-section--open");
+      } else {
+        btn.classList.remove("btn-section--open");
+      }
+    })
   })
+  
 );
 
 db.forEach(({ name, image, level, skills }) => {
