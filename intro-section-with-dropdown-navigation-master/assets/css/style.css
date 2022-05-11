@@ -25,7 +25,6 @@ html {
 
 body {
   min-height: 100vh;
-  overflow: hidden;
   background-color: var(--white-98);
 }
 
@@ -52,6 +51,7 @@ button {
   color: var(--med-gray);
   font-weight: var(--fw-700);
   cursor: pointer;
+  font-size: calc(var(--fs) - 5px);
 }
 
 /* UTILITIES CLASSES */
@@ -105,7 +105,7 @@ button {
 .link {
   width: 100%;
   height: 100%;
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-500);
 }
 
 .linkIcon {
@@ -140,6 +140,10 @@ button {
 .menuLink:hover > .submenu {
   animation: submenuShow 0.5s ease-out forwards;
   display: block;
+}
+
+.submenuLink:hover {
+  font-weight: var(--fw-700);
 }
 
 @keyframes submenuShow {
@@ -199,6 +203,64 @@ button {
   background-color: var(--white-98);
   color: var(--black-8);
   border-color: var(--black-8);
+}
+
+/* MAIN CONTENT */
+
+.container {
+  max-width: 1024px;
+  padding: 2rem 4rem 0;
+  margin: auto;
+  align-items: stretch;
+}
+
+.mainContent {
+  flex: .9;
+  padding: 2rem 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mainTitle {
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mainDescription {
+  max-width: 80%;
+  color: var(--med-gray);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-size: calc(var(--fs) - 2px);
+}
+
+.mainContent > header > button {
+  padding: 0.8rem 1.2rem;
+  font-size: calc(var(--fs) - 2px);
+  border-radius: 0.8rem;
+  font-weight: var(--fw-500);
+  letter-spacing: 1px;
+}
+
+.mainImage {
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.mainImage > img {
+  width: 100%;
+  max-width: 375px;
+  min-width: 350px;
+  display: block;
+  object-fit: cover;
+}
+
+/* MAIN CONTENT -- FOOTER */
+
+.clients {
+  width: 100%;
 }
 
 /* FOOTER */
