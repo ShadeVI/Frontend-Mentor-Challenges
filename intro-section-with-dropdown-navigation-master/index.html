@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
     <nav class="topNav">
@@ -27,18 +28,20 @@
         <div class="logoContainer">
           <img src="assets/images/logo.svg" alt="snap" />
         </div>
-        <ul class="menuLinks flex">
-          <li class="menuLink" data-rel="features">
-            <a href="#" class="link">Features</a>
-            <div class="linkIcon">
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+        <ul class="menuLinks flex menuMobile">
+          <li class="menuLink">
+            <div class="flex menuLinkTitle">
+              <a href="#" class="link">Features</a>
+              <div class="linkIcon">
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
             </div>
             <div class="submenu">
               <ul class="submenuList">
@@ -73,16 +76,18 @@
             </div>
           </li>
           <li class="menuLink">
-            <a href="#" class="link">Company</a>
-            <div class="linkIcon">
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke="#686868"
-                  stroke-width="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+            <div class="flex">
+              <a href="#" class="link">Company</a>
+              <div class="linkIcon">
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
             </div>
             <div class="submenu">
               <ul class="submenuList">
@@ -109,16 +114,19 @@
           <button type="button" class="btn">Login</button>
           <button type="button" class="btn btnSecondary">Register</button>
         </div>
-        <div class="mobileMenuIcon hidden">
-          <img src="assets/images/icon-menu.svg" alt="menu open" />
-          <img src="assets/images/icon-close-menu.svg" alt="menu close" />
+        <div class="mobileMenuIcon buttonsMobile">
+          <button class="btn menuMobileBtn">
+            <img class="btnMobile" src="assets/images/icon-menu.svg" alt="menu open" />
+            <img class="btnMobile hiddenBtn" src="assets/images/icon-close-menu.svg" alt="menu close" />
+          </button>
+          
         </div>
       </div>
     </nav>
 
     <main class="container flex">
       <div class="mainContent">
-        <header>
+        <header class="mainHeader">
           <h1 class="mainTitle">Make remote work</h1>
           <p class="mainDescription">
             Get your team in sync, no matter your location. Streamline processes,
@@ -143,7 +151,10 @@
         </div>
       </footer>
       <div class="mainImage">
-        <img src="assets/images/image-hero-desktop.png" alt="man with pc" />
+        <picture>
+          <source srcset="assets/images/image-hero-desktop.png" media="(min-width: 626px)">
+          <img class="mainHero" src="assets/images/image-hero-mobile.png" alt="man with pc" />
+        </picture>
       </div>
     </main>
 
