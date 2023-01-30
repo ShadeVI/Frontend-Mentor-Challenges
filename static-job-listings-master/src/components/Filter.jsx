@@ -11,8 +11,8 @@ const Filter = () => {
     dispatchJobs({ type: 'REMOVE_FILTER', payload: { filter } })
   }
 
-  const handleClickClearAll = (filter) => {
-    dispatchJobs({ type: 'REMOVE_FILTER', payload: { filter } })
+  const handleClickClearAll = () => {
+    dispatchJobs({ type: 'CLEAR_FILTER' })
   }
 
   return (
