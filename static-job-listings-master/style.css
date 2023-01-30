@@ -1,0 +1,54 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  /* **** PRIMARY **** */
+  --primary-dark-cyan: hsl(180, 29%, 50%);
+  /* **** NEUTRAL **** */
+  --neutral-light-grayish-cyan: hsl(180, 52%, 96%); /* BACKGROUND */
+  --neutral-grayish-cyan: hsl(180, 31%, 95%); /* FILTER TABLETS */
+  --neutral-dark-grayish-cyan: hsl(180, 8%, 52%);
+  --neutral-very-dark-grayish-cyan: hsl(180, 14%, 20%);
+  
+  /* FONTS */
+  --fs: 15px;
+  --ff: 'League Spartan', sans-serif;
+
+  /* MAX-WIDTHs */
+  --max-w-desktop: 1440px;
+  --max-w-mobile: 375px;
+}
+
+html {
+  font-size: var(--fs);
+  font-family: var(--ff);
+}
+
+body {
+  background-color: var(--neutral-light-grayish-cyan);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-very-dark-grayish-cyan)
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}

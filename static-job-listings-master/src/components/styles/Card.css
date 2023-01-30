@@ -1,0 +1,75 @@
+.job {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 5px 35px -15px var(--primary-dark-cyan);
+  position: relative;
+  background-color: white;
+}
+
+.job::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary-dark-cyan);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.job .job--logo {
+  min-width: 80px;
+  width: 80px;
+  height: 100%;
+}
+
+.job--company-info{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.job--infos {
+  min-width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.job--infos-company {
+  color: var(--primary-dark-cyan);
+}
+
+.job--infos-position {
+  color: var(--neutral-very-dark-grayish-cyan);
+  font-size: 1.2rem;
+}
+
+.job--infos-position:hover a {
+  color: var(--primary-dark-cyan);
+}
+
+.job--infos-values {
+  color: var(--neutral-dark-grayish-cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.job--skills {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

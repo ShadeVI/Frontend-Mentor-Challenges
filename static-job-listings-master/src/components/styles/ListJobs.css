@@ -1,0 +1,9 @@
+.jobs-list {
+  max-width: var(--max-w-desktop);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px
+}

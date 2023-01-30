@@ -1,0 +1,17 @@
+.label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 4px 6px 3px 6px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+
+.label--isNew {
+  background-color: var(--primary-dark-cyan);
+}
+
+.label--isFeatured {
+  background-color: black;
+}

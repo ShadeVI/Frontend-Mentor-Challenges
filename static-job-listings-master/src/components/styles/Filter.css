@@ -1,0 +1,12 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 5px 35px -15px var(--primary-dark-cyan);
+  background-color: white;
+  transform: translateY(-50%);
+}
