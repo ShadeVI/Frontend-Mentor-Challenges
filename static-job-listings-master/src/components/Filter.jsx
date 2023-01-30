@@ -2,6 +2,8 @@ import React from 'react'
 import { useJobsContext } from '../context'
 import './styles/Filter.css'
 
+import FilterElement from './FilterElement'
+
 const Filter = () => {
   const { filters, dispatchJobs } = useJobsContext()
 
@@ -9,14 +11,18 @@ const Filter = () => {
     dispatchJobs({ type: 'REMOVE_FILTER', payload: { filter } })
   }
 
+  const handleClickClearAll = (filter) => {
+    dispatchJobs({ type: 'REMOVE_FILTER', payload: { filter } })
+  }
+
   return (
     <section className='filter'>
-      <div>
+      <div className='filters--elementsContainer'>
         {filters.map(el => (
-          <button onClick={() => handleClickRemove(el)} key={el}>{el}</button>)
+          <FilterElement key={el} text={el} handleClickRemove={handleClickRemove} />)
         )}
       </div>
-      <button>clear</button>
+      <button className='filter--clearAll' onClick={handleClickClearAll}>Clear</button>
     </section>
   )
 }

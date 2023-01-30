@@ -3,10 +3,18 @@
   justify-content: space-between;
   align-items: stretch;
   margin: 0 auto;
-  padding: 25px;
+  padding: 15px 25px;
   border-radius: 5px;
   width: 100%;
   box-shadow: 0 5px 35px -15px var(--primary-dark-cyan);
   background-color: white;
   transform: translateY(-50%);
+}
+
+.filters--elementsContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25px;
+  gap: 10px;
 }

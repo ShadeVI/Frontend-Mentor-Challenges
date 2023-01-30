@@ -1,0 +1,53 @@
+.filter--container {
+  background-color: var(--neutral-grayish-cyan);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.filter--text {
+  font-weight: bold;
+  color: var(--primary-dark-cyan);
+  padding: 5px;
+}
+
+.filter--btn-remove {
+  background-color: var(--primary-dark-cyan);
+  color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.filter--btn-remove:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.filter--clearAll {
+  background-color: transparent;
+  color: var(--primary-dark-cyan);
+  font-weight: bold;
+  position: relative;
+}
+
+.filter--clearAll::before {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: var(--primary-dark-cyan);
+}
+
+.filter--clearAll:hover::before {
+  width: 100%;
+}

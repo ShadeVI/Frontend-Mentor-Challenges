@@ -31,6 +31,7 @@
 
 .job--company-info{
   flex-grow: 1;
+  max-width: 40%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -40,6 +41,7 @@
 
 .job--infos {
   min-width: fit-content;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
