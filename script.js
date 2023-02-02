@@ -146,6 +146,7 @@ const db = [
     image: "desktop-design.jpg",
     level: "Intermediate",
     skills: ["HTML", "CSS", "JS", "React", "ContextAPI", "useReducer"],
+    ext_preview: "https://leafy-mochi-115325.netlify.app/"
   },
 ];
 
@@ -171,7 +172,7 @@ btnsSection.forEach((btn) =>
   
 );
 
-db.forEach(({ name, image, level, skills }) => {
+db.forEach(({ name, image, level, skills, ext_preview }) => {
   const nameFormatted = formatName(name);
   const listSkillsFormatted = formatSkillsList(skills);
 
@@ -188,7 +189,7 @@ db.forEach(({ name, image, level, skills }) => {
             <h3 class="title">${nameFormatted}</h3>
             <p class="skills">${listSkillsFormatted}</p>
             <a class="code" href="https://github.com/ShadeVI/Frontend-Mentor-Challenges/tree/main/${name}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a class="live" href="/${name}/index.html" target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
+            <a class="live" href="${ext_preview ? ext_preview : `/${name}/index.html`}"  target="_blank" rel="noopener noreferrer"><i class="far fa-eye"></i></a>
             <p class="level">Level: ${level}</p>
         </div>
     `;
