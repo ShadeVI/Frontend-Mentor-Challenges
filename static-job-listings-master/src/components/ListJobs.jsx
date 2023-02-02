@@ -6,7 +6,7 @@ import './styles/ListJobs.css'
 const ListJobs = () => {
   const { jobs, filters } = useJobsContext()
   return (
-    <section className='jobs-list'>
+    <section className='jobs-list' style={{ marginTop: `${filters.length === 0 ? '30px' : '0px'}` }}>
       {jobs.map((job) => {
         const { role, level, languages, tools } = job
         const skillsSet = [role, level, ...languages, ...tools]

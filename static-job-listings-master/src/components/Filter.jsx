@@ -15,6 +15,8 @@ const Filter = () => {
     dispatchJobs({ type: 'CLEAR_FILTER' })
   }
 
+  if (filters.length === 0) return
+
   return (
     <section className='filter'>
       <div className='filters--elementsContainer'>
