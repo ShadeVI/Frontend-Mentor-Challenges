@@ -141,10 +141,17 @@ const db = [
     level: "Junior",
     skills: ["HTML", "CSS", "JS"],
   },
+  {
+    name: "static-job-listings-master",
+    image: "desktop-design.jpg",
+    level: "Intermediate",
+    skills: ["HTML", "CSS", "JS", "React", "ContextAPI", "useReducer"],
+  },
 ];
 
 const newbieSection = document.querySelector("#newbie .box-container");
 const juniorSection = document.querySelector("#junior .box-container");
+const intermediateSection = document.querySelector("#intermediate .box-container");
 
 const btnsSection = document.querySelectorAll(".btn-section");
 
@@ -189,6 +196,8 @@ db.forEach(({ name, image, level, skills }) => {
     newbieSection.appendChild(listItem);
   } else if (level === "Junior") {
     juniorSection.appendChild(listItem);
+  } else if (level === "Intermediate") {
+    intermediateSection.appendChild(listItem);
   }
 });
 
